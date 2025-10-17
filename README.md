@@ -1,22 +1,19 @@
-# Wikipedia Summary Search
+# Wikipedia Search (Enhanced)
 
 ## Overview
-A minimal web page that queries the Wikipedia REST API to fetch a short summary for a topic. It displays the article title, extract, and thumbnail image when available.
+A simple client-side Wikipedia search app using the MediaWiki API. This version adds a history panel (up to 5 items), a clear history control, and upgraded Bootstrap card-based styling.
 
 ## Setup
-- No build steps or dependencies.
-- Open index.html in any modern browser.
+- Open index.html in any modern browser. No build step or API keys required.
+- Internet connection is required to query the Wikipedia API.
 
 ## Usage
-- Enter a topic (e.g., “Ada Lovelace”) and click Search.
-- The page will display the title, a brief summary, and a thumbnail if available.
-- Click “Read on Wikipedia” to open the full article.
+- Enter a topic and press Enter or click Search.
+- Results appear as cards with links to the corresponding Wikipedia articles.
+- The History panel lists your last 5 searched topics. Click any item to re-run that search.
+- Click “Clear history” to remove all saved topics.
 
-## License (MIT)
-Copyright (c) 2025 The Project Authors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+## Improvements in Round 2
+- Added History panel that tracks up to 5 recent searches.
+- Added “Clear history” button to wipe stored topics.
+- Improved UI with Bootstrap cards, alerts, and better layout.
